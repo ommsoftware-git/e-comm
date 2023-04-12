@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./assets/images/favicon/26.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon/26.png"
+      type="image/x-icon"
+    />
+    <title>Damensch Ecommerence</title>
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fo nts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/font-awesome.css"
+    />
+
+    <!--Slick slider css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/slick-theme.css"
+    />
+
+    <!-- Animate icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/animate.css"
+    />
+
+    <!-- Themify icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/themify-icons.css"
+    />
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/bootstrap.css"
+    />
+
+    <!-- Theme css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body class="theme-color-1">
+    <!-- header start -->
+    <header id="sticky-header" class="style-light header-compact">
+      <div class="mobile-fix-option"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="main-menu">
+              <div class="menu-left">
+                <div class="brand-logo">
+                  <a href="index.html">
+                    <img
+                      src="./assets/images/icon/logo/logo.png"
+                      alt=""
+                      srcset=""
+                      width="550px"
+                      height="80px"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div>
+                <form class="form_search" role="form">
+                  <input
+                    id="query search-autocomplete"
+                    type="search"
+                    placeholder="Search any Device or Gadgets..."
+                    class="nav-search nav-search-field"
+                    aria-expanded="true"
+                  />
+                  <button
+                    type="submit"
+                    name="nav-submit-button"
+                    class="btn-search"
+                  >
+                    <i class="ti-search"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="menu-right pull-right">
+                <div>
+                  <div class="icon-nav">
+                    <ul>
+                      <li
+                        class="onhover-div mobile-search d-xl-none d-inline-block"
+                      >
+                        <div>
+                          <img
+                            src="./assets/images/icon/search.png"
+                            onclick="openSearch()"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                          /><i class="ti-search" onclick="openSearch()"></i>
+                        </div>
+                        <div id="search-overlay" class="search-overlay">
+                          <div>
+                            <span
+                              class="closebtn"
+                              onclick="closeSearch()"
+                              title="Close Overlay"
+                              >×</span
+                            >
+                            <div class="overlay-content">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-xl-12">
+                                    <form>
+                                      <div class="form-group">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="exampleInputPassword1"
+                                          placeholder="Search a Product"
+                                        />
+                                      </div>
+                                      <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                      >
+                                        <i class="fa fa-search"></i>
+                                      </button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="onhover-div mobile-setting">
+                        <div>
+                          <img
+                            src="./assets/images/icon/profile.png"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                            width="35px"
+                          /><i class="ti-settings"></i>
+                        </div>
+                        <div class="show-div setting">
+                          <ul>
+                            <li>
+                              <a href="profile.html"
+                                ><img
+                                  src="./assets/images/icon/user.png"
+                                  alt=""
+                                  srcset=""
+                                  width="25px"
+                                  height="25px"
+                                  class="mx-2"
+                                />Profile</a
+                              >
+                            </li>
+
+                            <li>
+                              <a href="login.html"
+                                ><img
+                                  src="./assets/images/icon/logout.png"
+                                  alt=""
+                                  srcset=""
+                                  width="25px"
+                                  height="25px"
+                                  class="mx-2"
+                                />Logout</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="onhover-div mobile-wishlist">
+                        <a href="wishlist.html">
+                          <div>
+                            <img
+                              src="./assets/images/icon/wishlist.png"
+                              class="img-fluid blur-up lazyload"
+                              alt=""
+                              width="35px"
+                            />
+                          </div>
+                          <span class="cart_qty_cls">0</span>
+                        </a>
+                      </li>
+                      <li class="onhover-div mobile-cart">
+                        <div>
+                          <img
+                            src="./assets/images/icon/cart.png"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                          /><i class="ti-shopping-cart"></i>
+                        </div>
+                        <span class="cart_qty_cls">0</span>
+                        <ul class="show-div shopping-cart">
+                          <li>
+                            <div class="media">
+                              <a href="product-details.html"
+                                ><img
+                                  alt=""
+                                  class="me-3"
+                                  src="./assets/images/hero/products/1.png"
+                              /></a>
+                              <div class="media-body">
+                                <a href="product-details.html">
+                                  <h4>Samsung G50</h4>
+                                </a>
+                                <h4><span>1 x $ 49.00</span></h4>
+                              </div>
+                            </div>
+                            <div class="close-circle">
+                              <a href="#"
+                                ><i class="fa fa-times" aria-hidden="true"></i
+                              ></a>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="total">
+                              <h5>subtotal : <span>$49.00</span></h5>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="buttons">
+                              <a href="cart.html" class="view-cart"
+                                >view cart</a
+                              >
+                              <a href="checkout.html" class="checkout"
+                                >checkout</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-part bottom-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 menu-row">
+              <div class="main-nav-center">
+                <nav id="main-nav" class="text-start">
+                  <div class="toggle-nav">
+                    <i class="fa fa-bars sidebar-bar"></i>
+                  </div>
+                  <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                    <li>
+                      <a href="#" class="btn btn-solid mx-3 px-5 fw-bold"
+                        >Category</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="#">Furniture</a>
+                        </li>
+                        <li>
+                          <a href="#">Digital product</a>
+                        </li>
+                        <li>
+                          <a href="#">Couche </a>
+                        </li>
+                        <li>
+                          <a href="#">Decor </a>
+                        </li>
+                        <li>
+                          <a href="#">Chair </a>
+                        </li>
+                        <li>
+                          <a href="#">Home </a>
+                        </li>
+                        <li>
+                          <a href="#">Fashion </a>
+                        </li>
+                        <li>
+                          <a href="#">Baby Care </a>
+                        </li>
+                        <li>
+                          <a href="#">Electronics </a>
+                        </li>
+                        <li>
+                          <a href="#">Drinks </a>
+                        </li>
+                        <li>
+                          <a href="#">Vegetable </a>
+                        </li>
+                        <li>
+                          <a href="#">Computer's </a>
+                        </li>
+                        <hr />
+                        <li>
+                          <a href="category.html">View All </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="mobile-back text-end">
+                        Back<i
+                          class="fa fa-angle-right ps-2"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="mega" id="hover-cls">
+                      <a href="product-list.html">Products</a>
+                    </li>
+                    <li><a href="seller.html">Seller</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- breadcrumb start -->
+    <div class="breadcrumb-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="page-title">
+              <h2>Profile</h2>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <nav aria-label="breadcrumb" class="theme-breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Profile
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- breadcrumb End -->
+
+    <!--  profile section start -->
+    <section class="dashboard-section section-b-space user-dashboard-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="dashboard-sidebar">
+              <div class="profile-top">
+                <div class="profile-detail">
+                  <h5>Suraj Jamdade</h5>
+                  <h6>suraj@gmail.com</h6>
+                </div>
+              </div>
+              <div class="faq-tab">
+                <ul class="nav nav-tabs" id="top-tab" role="tablist">
+                  <li class="nav-item">
+                    <a
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile"
+                      class="nav-link active"
+                      >Profile</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      data-bs-toggle="tab"
+                      data-bs-target="#orders"
+                      class="nav-link"
+                      >My Orders</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      data-bs-toggle="tab"
+                      data-bs-target="#wallet"
+                      class="nav-link"
+                      >Wallet</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      data-bs-toggle="tab"
+                      data-bs-target="#address"
+                      class="nav-link"
+                      >Address
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      data-bs-toggle="tab"
+                      data-bs-target="#wishlist"
+                      class="nav-link"
+                      >My Wishlist</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      data-bs-toggle="tab"
+                      data-bs-target="#payment"
+                      class="nav-link"
+                      >Saved Cards</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link">Log Out</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-9">
+            <div class="faq-content tab-content" id="top-tabContent">
+              <div class="tab-pane fade show active" id="profile">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card mt-0">
+                      <div class="card-body">
+                        <div class="dashboard-box">
+                          <div class="dashboard-title">
+                            <h4>profile</h4>
+                          </div>
+                          <div class="profile-detail">
+                            <div class="row">
+                              <div class="col-md-6 col-12 mb-3">
+                                <label for="Username*">Username*</label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  id="Username*"
+                                  placeholder="Enter Your Username*"
+                                  required=""
+                                  value="suraj"
+                                />
+                              </div>
+                              <div class="col-md-6 col-12 mb-3">
+                                <label for="Username*">Mobile*</label>
+                                <input
+                                  type="number"
+                                  class="form-control"
+                                  id="Username*"
+                                  placeholder="Enter Your Mobile*"
+                                  required=""
+                                  value="9876543210"
+                                />
+                              </div>
+                              <div class="col-md-6 col-12 mb-3">
+                                <label for="Username*">Email*</label>
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="Username*"
+                                  placeholder="Enter Your email*"
+                                  required=""
+                                  value="suraj@gmail.com"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="dashboard-title mt-lg-5 mt-3">
+                            <h4>login details</h4>
+                          </div>
+                          <div class="login-detail">
+                            <div class="row">
+                              <div class="col-md-6 col-12 mb-3">
+                                <label for="Username*">Old Password*</label>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  id="password*"
+                                  placeholder="Enter Your Old Password*"
+                                  required=""
+                                  value="1234"
+                                />
+                              </div>
+                              <div class="col-md-6 col-12 mb-3">
+                                <label for="Username*">New Password*</label>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  id="password*"
+                                  placeholder="Enter Your Old Password*"
+                                  required=""
+                                  value="1234"
+                                />
+                              </div>
+                              <div class="col-md-6 col-12 mb-3">
+                                <label for="Username*">Confirm Password*</label>
+                                <input
+                                  type="password"
+                                  class="form-control"
+                                  id="password*"
+                                  placeholder="Enter Your Confirm Password*"
+                                  required=""
+                                  value=""
+                                />
+                              </div>
+                            </div>
+                            <button class="btn btn-solid">Save</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="address">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card mt-0">
+                      <div class="card-body">
+                        <div class="top-sec">
+                          <h3>Address Book</h3>
+                          <!-- <a href="#" class="btn btn-sm btn-solid"></a> -->
+                          <!-- Button trigger modal -->
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-solid"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"
+                          >
+                            + add new
+                          </button>
+
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModal"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel"
+                                  >
+                                    Add Address
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col-md-6 col-12 mb-3">
+                                      <label for="Username*">Name*</label>
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        id="name*"
+                                        placeholder="Enter Your Username*"
+                                        required=""
+                                        value="suraj"
+                                      />
+                                    </div>
+                                    <div class="col-md-6 col-12 mb-3">
+                                      <label for="Username*"
+                                        >Mobile Number*</label
+                                      >
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="number*"
+                                        placeholder="Enter Your Mobile *"
+                                        required=""
+                                        value="9876543210"
+                                      />
+                                    </div>
+                                    <div class="col-md-12 col-12 mb-3">
+                                      <label for="Username*">Address*</label>
+
+                                      <textarea
+                                        class="form-control"
+                                        id="exampleFormControlTextarea1"
+                                        rows="3"
+                                      ></textarea>
+                                    </div>
+                                    <div class="col-md-12 col-12 mb-3">
+                                      <label for="Username*">Type*</label>
+
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="flexRadioDefault"
+                                          id="flexRadioDefault1"
+                                        />
+                                        <label
+                                          class="form-check-label mx-3"
+                                          for="flexRadioDefault1"
+                                        >
+                                          Home
+                                        </label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input
+                                          class="form-check-input"
+                                          type="radio"
+                                          name="flexRadioDefault"
+                                          id="flexRadioDefault2"
+                                          checked
+                                        />
+                                        <label
+                                          class="form-check-label mx-3"
+                                          for="flexRadioDefault2"
+                                        >
+                                          Office
+                                        </label>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-solid">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="address-book-section">
+                          <div class="row g-4">
+                            <div class="select-box active col-xl-4 col-md-6">
+                              <div class="address-box">
+                                <div class="top">
+                                  <h6>Suraj Jamdade <span>home</span></h6>
+                                </div>
+                                <div class="middle">
+                                  <div class="address">
+                                    <p>549 Sulphur Springs Road</p>
+                                    <p>Downers Grove, IL</p>
+                                    <p>60515</p>
+                                  </div>
+                                  <div class="number">
+                                    <p>
+                                      mobile: <span>+91 123 - 456 - 7890</span>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="bottom">
+                                  <a href="#" class="bottom_btn">remove</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="select-box col-xl-4 col-md-6">
+                              <div class="address-box">
+                                <div class="top">
+                                  <h6>Suraj Jamdade <span>office</span></h6>
+                                </div>
+                                <div class="middle">
+                                  <div class="address">
+                                    <p>549 Sulphur Springs Road</p>
+                                    <p>Downers Grove, IL</p>
+                                    <p>60515</p>
+                                  </div>
+                                  <div class="number">
+                                    <p>
+                                      mobile: <span>+91 123 - 456 - 7890</span>
+                                    </p>
+                                  </div>
+                                </div>
+                                <div class="bottom">
+                                  <a href="#" class="bottom_btn">remove</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="orders">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card dashboard-table mt-0">
+                      <div class="card-body table-responsive-sm">
+                        <div class="top-sec">
+                          <h3>My Orders</h3>
+                        </div>
+                        <div class="table-responsive-xl">
+                          <table
+                            class="table cart-table order-table table-striped table-bordered"
+                          >
+                            <thead>
+                              <tr class="table-head">
+                                <th scope="col">image</th>
+                                <th scope="col">Order Id</th>
+                                <th scope="col">Product Details</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">View</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href="javascript:void(0)">
+                                    <img
+                                      src="./assets/images/hero/products/1.png"
+                                      class="blur-up lazyloaded"
+                                      alt=""
+                                    />
+                                  </a>
+                                </td>
+                                <td>
+                                  <span class="mt-0">#125021</span>
+                                </td>
+                                <td>
+                                  <span class="fs-6"
+                                    >Samsung Galaxy S23 Ultra 5G</span
+                                  >
+                                </td>
+                                <td>
+                                  <span class="fs-6">1</span>
+                                </td>
+                                <td>
+                                  <span
+                                    class="badge rounded-pill bg-success custom-badge"
+                                    >Shipped</span
+                                  >
+                                </td>
+                                <td>
+                                  <span class="theme-color fs-6">$49.54</span>
+                                </td>
+                                <td>
+                                  <a href="order-details.html">
+                                    <i class="fa fa-eye text-theme"></i>
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="wishlist">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card dashboard-table mt-0">
+                      <div class="card-body table-responsive-sm">
+                        <div class="top-sec">
+                          <h3>My Wishlist</h3>
+                        </div>
+                        <div class="table-responsive-xl">
+                          <table
+                            class="table cart-table wishlist-table table-bordered"
+                          >
+                            <thead>
+                              <tr class="table-head">
+                                <th scope="col">image</th>
+                                <th scope="col">Order Id</th>
+                                <th scope="col">Product Details</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Action</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <a href="javascript:void(0)">
+                                    <img
+                                      src="./assets/images/hero/products/1.png"
+                                      class="blur-up lazyloaded"
+                                      alt=""
+                                    />
+                                  </a>
+                                </td>
+                                <td>
+                                  <span class="mt-0">#125021</span>
+                                </td>
+                                <td>
+                                  <span>Samsung Galaxy S23 Ultra 5G</span>
+                                </td>
+                                <td>
+                                  <span class="theme-color fs-6">$49.54</span>
+                                </td>
+                                <td>
+                                  <a
+                                    href="cart.html"
+                                    class="btn btn-xs btn-solid"
+                                  >
+                                    Move to Cart
+                                  </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="payment">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card mt-0">
+                      <div class="card-body">
+                        <div class="top-sec">
+                          <h3>Saved Cards</h3>
+
+                          <!-- Button trigger modal -->
+                          <button
+                            type="button"
+                            class="btn btn-sm btn-solid"
+                            data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1"
+                          >
+                            + add new
+                          </button>
+
+                          <!-- Modal -->
+                          <div
+                            class="modal fade"
+                            id="exampleModal1"
+                            tabindex="-1"
+                            aria-labelledby="exampleModalLabel1"
+                            aria-hidden="true"
+                          >
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5
+                                    class="modal-title"
+                                    id="exampleModalLabel1"
+                                  >
+                                    Add Card
+                                  </h5>
+                                  <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="modal"
+                                    aria-label="Close"
+                                  ></button>
+                                </div>
+                                <div class="modal-body">
+                                  <div class="row">
+                                    <div class="col-md-12 col-12 mb-3">
+                                      <label for="number*">Card Number*</label>
+                                      <input
+                                        type="number"
+                                        class="form-control"
+                                        id="number*"
+                                        placeholder="Enter Your Card Number*"
+                                        required=""
+                                        value=""
+                                      />
+                                    </div>
+                                    <div class="col-md-12 col-12 mb-3">
+                                      <label for="Username*">Validity*</label>
+                                      <input
+                                        type="date"
+                                        class="form-control"
+                                        id="date*"
+                                        placeholder="Enter Your Validity *"
+                                        required=""
+                                        value=""
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-solid">
+                                    Save changes
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="address-book-section">
+                          <div class="row g-4">
+                            <div class="select-box active col-xl-4 col-md-6">
+                              <div class="address-box">
+                                <div class="bank-logo">
+                                  <img
+                                    src="./assets/images/icon/bank-logo.png"
+                                    class="bank-logo"
+                                  />
+                                  <img
+                                    src="./assets/images/icon/visa (1).png"
+                                    class="network-logo"
+                                  />
+                                </div>
+                                <div class="card-number">
+                                  <h6>Card Number</h6>
+                                  <h5>6262 6126 2112 1515</h5>
+                                </div>
+                                <div class="name-validity">
+                                  <div class="left">
+                                    <h6>name on card</h6>
+                                    <h5>Suraj Jamdade</h5>
+                                  </div>
+                                  <div class="right">
+                                    <h6>validity</h6>
+                                    <h5>23/28</h5>
+                                  </div>
+                                </div>
+                                <div class="bottom">
+                                  <a href="#" class="bottom_btn">remove</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="wallet">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card dashboard-table mt-0">
+                      <div class="card-body table-responsive-sm">
+                        <div class="top-sec">
+                          <h3>Wallet</h3>
+                        </div>
+                        <div class="table-responsive-xl">
+                          <table
+                            class="table cart-table order-table table-striped table-bordered"
+                          >
+                            <thead>
+                              <tr class="table-head">
+                                <th scope="col">ID</th>
+                                <th scope="col">USERNAME</th>
+                                <th scope="col">TYPE</th>
+                                <th scope="col">AMOUNT</th>
+                                <th scope="col">STATUS</th>
+                                <th scope="col">MESSAGE</th>
+                                <th scope="col">DATE</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td colspan="7">Loading, please wait...</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  profile section end -->
+    <!-- footer start -->
+    <footer class="footer-light footer-expand pb-0" style="background: #fffdf4">
+      <div class="section-t-space section-b-space">
+        <div class="container">
+          <div class="row footer-theme partition-f">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-title footer-mobile-title">
+                <h4>about</h4>
+              </div>
+              <div class="footer-contant">
+                <div class="footer-logo">
+                  <img src="./assets/images/icon/logo/37.png" alt="" />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam,
+                </p>
+                <ul class="store-details">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/store/google.png"
+                        class="img-fluid"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/store/app.png"
+                        class="img-fluid"
+                        alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col offset-xxl-1">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>Quick Links</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul>
+                    <li><a href="product-list.html">Products</a></li>
+
+                    <li><a href="wishlist.html">Favorite</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="category.html">Category</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>why we choose</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="return-policy.html">return Policy</a></li>
+                    <li><a href="privacy-policy.html">Privacy & Policy</a></li>
+                    <li>
+                      <a href="terms-conditions.html">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>store information</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul class="contact-list">
+                    <li><i class="fa fa-map-marker"></i>Pune ,MH| India</li>
+                    <li><i class="fa fa-phone"></i>Call Us: 9876543210</li>
+                    <li>
+                      <i class="fa fa-envelope"></i>Email Us:
+                      <a href="#">demo@demo.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row small-section pb-0 d-md-block d-none">
+            <div class="col-12 popular-search-section">
+              <h4 class="mt-5">About E commerce</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam,
+              </p>
+              <h4 class="mt-5">Payment partners</h4>
+              <div>
+                <img
+                  src="./assets/images/payment-footer.png"
+                  alt=""
+                  class="img-fluid payment-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-md-6 col-sm-12">
+              <div class="footer-end">
+                <p>
+                  <i class="fa fa-copyright" aria-hidden="true"></i> 2023-24 All
+                  right reserved.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6 col-sm-12">
+              <div class="payment-card-bottom">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="./assets/images/icon/visa.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./assets/images/icon/mastercard.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./assets/images/icon/paypal.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/icon/american-express.png"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./assets/images/icon/discover.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+    <!-- tap to top -->
+    <div class="tap-top">
+      <div>
+        <i class="fa fa-angle-double-up"></i>
+      </div>
+    </div>
+    <!-- tap to top End -->
+
+    <!-- latest jquery-->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+
+    <!-- menu js-->
+    <script src="./assets/js/menu.js"></script>
+
+    <!-- lazyload js-->
+    <script src="./assets/js/lazysizes.min.js"></script>
+
+    <!-- slick js-->
+    <script src="./assets/js/slick.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Notification js-->
+    <script src="./assets/js/bootstrap-notify.min.js"></script>
+
+    <!-- Theme js-->
+    <script src="./assets/js/theme-setting.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

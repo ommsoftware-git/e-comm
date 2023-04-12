@@ -1,0 +1,3908 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./assets/images/favicon/26.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/favicon/26.png"
+      type="image/x-icon"
+    />
+    <title>Damensch Ecommerence</title>
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fo nts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/font-awesome.css"
+    />
+
+    <!--Slick slider css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/slick-theme.css"
+    />
+
+    <!-- Animate icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/animate.css"
+    />
+
+    <!-- Themify icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/themify-icons.css"
+    />
+
+    <!-- Bootstrap css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/vendors/bootstrap.css"
+    />
+
+    <!-- Theme css -->
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <body class="theme-color-30 mulish-font">
+    <!-- header start -->
+    <header id="sticky-header" class="style-light header-compact">
+      <div class="mobile-fix-option"></div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="main-menu">
+              <div class="menu-left">
+                <div class="brand-logo">
+                  <a href="index.html">
+                    <img
+                      src="./assets/images/icon/logo/logo.png"
+                      alt=""
+                      srcset=""
+                      width="550px"
+                      height="80px"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div>
+                <form class="form_search" role="form">
+                  <input
+                    id="query search-autocomplete"
+                    type="search"
+                    placeholder="Search any Device or Gadgets..."
+                    class="nav-search nav-search-field"
+                    aria-expanded="true"
+                  />
+                  <button
+                    type="submit"
+                    name="nav-submit-button"
+                    class="btn-search"
+                  >
+                    <i class="ti-search"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="menu-right pull-right">
+                <div>
+                  <div class="icon-nav">
+                    <ul>
+                      <li
+                        class="onhover-div mobile-search d-xl-none d-inline-block"
+                      >
+                        <div>
+                          <img
+                            src="./assets/images/icon/search.png"
+                            onclick="openSearch()"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                          /><i class="ti-search" onclick="openSearch()"></i>
+                        </div>
+                        <div id="search-overlay" class="search-overlay">
+                          <div>
+                            <span
+                              class="closebtn"
+                              onclick="closeSearch()"
+                              title="Close Overlay"
+                              >×</span
+                            >
+                            <div class="overlay-content">
+                              <div class="container">
+                                <div class="row">
+                                  <div class="col-xl-12">
+                                    <form>
+                                      <div class="form-group">
+                                        <input
+                                          type="text"
+                                          class="form-control"
+                                          id="exampleInputPassword1"
+                                          placeholder="Search a Product"
+                                        />
+                                      </div>
+                                      <button
+                                        type="submit"
+                                        class="btn btn-primary"
+                                      >
+                                        <i class="fa fa-search"></i>
+                                      </button>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+
+                      <li class="onhover-div mobile-setting">
+                        <div>
+                          <img
+                            src="./assets/images/icon/profile.png"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                            width="35px"
+                          /><i class="ti-settings"></i>
+                        </div>
+                        <div class="show-div setting">
+                          <ul>
+                            <li>
+                              <a href="profile.html"
+                                ><img
+                                  src="./assets/images/icon/user.png"
+                                  alt=""
+                                  srcset=""
+                                  width="25px"
+                                  height="25px"
+                                  class="mx-2"
+                                />Profile</a
+                              >
+                            </li>
+
+                            <li>
+                              <a href="login.html"
+                                ><img
+                                  src="./assets/images/icon/logout.png"
+                                  alt=""
+                                  srcset=""
+                                  width="25px"
+                                  height="25px"
+                                  class="mx-2"
+                                />Logout</a
+                              >
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li class="onhover-div mobile-wishlist">
+                        <a href="wishlist.html">
+                          <div>
+                            <img
+                              src="./assets/images/icon/wishlist.png"
+                              class="img-fluid blur-up lazyload"
+                              alt=""
+                              width="35px"
+                            />
+                          </div>
+                          <span class="cart_qty_cls">0</span>
+                        </a>
+                      </li>
+                      <li class="onhover-div mobile-cart">
+                        <div>
+                          <img
+                            src="./assets/images/icon/cart.png"
+                            class="img-fluid blur-up lazyload"
+                            alt=""
+                          /><i class="ti-shopping-cart"></i>
+                        </div>
+                        <span class="cart_qty_cls">0</span>
+                        <ul class="show-div shopping-cart">
+                          <li>
+                            <div class="media">
+                              <a href="product-details.html"
+                                ><img
+                                  alt=""
+                                  class="me-3"
+                                  src="./assets/images/hero/products/1.png"
+                              /></a>
+                              <div class="media-body">
+                                <a href="product-details.html">
+                                  <h4>Samsung G50</h4>
+                                </a>
+                                <h4><span>1 x $ 49.00</span></h4>
+                              </div>
+                            </div>
+                            <div class="close-circle">
+                              <a href="#"
+                                ><i class="fa fa-times" aria-hidden="true"></i
+                              ></a>
+                            </div>
+                          </li>
+
+                          <li>
+                            <div class="total">
+                              <h5>subtotal : <span>$49.00</span></h5>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="buttons">
+                              <a href="cart.html" class="view-cart"
+                                >view cart</a
+                              >
+                              <a href="checkout.html" class="checkout"
+                                >checkout</a
+                              >
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom-part bottom-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 menu-row">
+              <div class="main-nav-center">
+                <nav id="main-nav" class="text-start">
+                  <div class="toggle-nav">
+                    <i class="fa fa-bars sidebar-bar"></i>
+                  </div>
+                  <ul id="main-menu" class="sm pixelstrap sm-horizontal">
+                    <li>
+                      <a href="#" class="btn btn-solid mx-3 px-5 fw-bold"
+                        >Category</a
+                      >
+                      <ul>
+                        <li>
+                          <a href="#">Furniture</a>
+                        </li>
+                        <li>
+                          <a href="#">Digital product</a>
+                        </li>
+                        <li>
+                          <a href="#">Couche </a>
+                        </li>
+                        <li>
+                          <a href="#">Decor </a>
+                        </li>
+                        <li>
+                          <a href="#">Chair </a>
+                        </li>
+                        <li>
+                          <a href="#">Home </a>
+                        </li>
+                        <li>
+                          <a href="#">Fashion </a>
+                        </li>
+                        <li>
+                          <a href="#">Baby Care </a>
+                        </li>
+                        <li>
+                          <a href="#">Electronics </a>
+                        </li>
+                        <li>
+                          <a href="#">Drinks </a>
+                        </li>
+                        <li>
+                          <a href="#">Vegetable </a>
+                        </li>
+                        <li>
+                          <a href="#">Computer's </a>
+                        </li>
+                        <hr />
+                        <li>
+                          <a href="category.html">View All </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <div class="mobile-back text-end">
+                        Back<i
+                          class="fa fa-angle-right ps-2"
+                          aria-hidden="true"
+                        ></i>
+                      </div>
+                    </li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="mega" id="hover-cls">
+                      <a href="product-list.html">Products</a>
+                    </li>
+                    <li><a href="seller.html">Seller</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- Home slider -->
+    <section class="p-0 layout-7">
+      <div class="slide-1 home-slider">
+        <div>
+          <div class="home text-start">
+            <img
+              src="./assets/images/hero/banner/1.jpg"
+              alt=""
+              class="bg-img blur-up lazyload"
+            />
+            <div class="container-fluid custom-container">
+              <div class="row">
+                <div class="col">
+                  <div class="slider-contain">
+                    <div>
+                      <h4>Headsets for all styles</h4>
+                      <h1>Starting</h1>
+                      <a href="#" class="btn btn-solid">shop now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="home text-start">
+            <img
+              src="./assets/images/hero/banner/1.jpg"
+              alt=""
+              class="bg-img blur-up lazyload"
+            />
+            <div class="container-fluid custom-container">
+              <div class="row">
+                <div class="col">
+                  <div class="slider-contain">
+                    <div>
+                      <h4>Furnishing deals</h4>
+                      <h1>Up to 70% off</h1>
+                      <a href="#" class="btn btn-solid">shop now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Home slider end -->
+
+    <!-- category section start -->
+    <section class="ecom-category">
+      <div class="container">
+        <div class="vector-slide-8 no-arrow slick-default-margin ratio_square">
+          <div class="">
+            <a href="category-page(hero).html">
+              <div class="category-boxes">
+                <div class="img-sec">
+                  <img
+                    src="./assets/images/icon/category/1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Furniture</h4>
+              </div>
+            </a>
+          </div>
+          <div class="">
+            <a href="#">
+              <div class="category-boxes">
+                <div class="img-sec">
+                  <img
+                    src="./assets/images/icon/category/2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Digital</h4>
+              </div>
+            </a>
+          </div>
+          <div class="">
+            <a href="#">
+              <div class="category-boxes">
+                <div class="img-sec">
+                  <img
+                    src="./assets/images/icon/category/3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Couche</h4>
+              </div>
+            </a>
+          </div>
+          <div class="">
+            <a href="#">
+              <div class="category-boxes">
+                <div class="img-sec">
+                  <img
+                    src="./assets/images/icon/category/4.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Decor</h4>
+              </div>
+            </a>
+          </div>
+          <div class="">
+            <a href="#">
+              <div class="category-boxes">
+                <div class="img-sec">
+                  <img
+                    src="./assets/images/icon/category/5.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Chair</h4>
+              </div>
+            </a>
+          </div>
+          <div class="">
+            <a href="#">
+              <div class="category-boxes">
+                <div class="img-sec">
+                  <img
+                    src="./assets/images/icon/category/6.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Home</h4>
+              </div>
+            </a>
+          </div>
+          <div class="">
+            <a href="#">
+              <div class="category-boxes">
+                <div class="img-sec">
+                  <img
+                    src="./assets/images/icon/category/7.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Fashion</h4>
+              </div>
+            </a>
+          </div>
+          <div class="">
+            <a href="#">
+              <div class="category-boxes">
+                <div class="img-sec">
+                  <img
+                    src="./assets/images/icon/category/8.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+                <h4>Baby Care</h4>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- category section end -->
+
+    <!-- banner section start -->
+    <section class="banner-goggles banner-offer ratio2_1">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="collection-banner p-right text-end">
+                <div class="img-part">
+                  <img
+                    src="./assets/images/hero/banner/17.jpg"
+                    class="img-fluid blur-up lazyload bg-img"
+                    alt=""
+                  />
+                </div>
+
+                <div class="contain-banner white-content banner-3">
+                  <div>
+                    <h4>Flat $10 Cashbook</h4>
+                    <h2 class="mb-1">min txn: $250</h2>
+                    <h6 class="mb-0">valid once per user</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="collection-banner p-right text-end">
+                <div class="img-part">
+                  <img
+                    src="./assets/images/hero/banner/19.jpg"
+                    class="img-fluid blur-up lazyload bg-img"
+                    alt=""
+                  />
+                </div>
+                <div class="contain-banner banner-3">
+                  <div>
+                    <h4 class="text-dark">Flat $10 Cashbook</h4>
+                    <h2 class="mb-1 text-dark">min txn: $250</h2>
+                    <h6 class="text-dark mb-0">valid once per user</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4">
+            <a href="#">
+              <div class="collection-banner p-right text-end">
+                <div class="img-part">
+                  <img
+                    src="./assets/images/hero/banner/18.jpg"
+                    class="img-fluid blur-up lazyload bg-img"
+                    alt=""
+                  />
+                </div>
+                <div class="contain-banner white-content banner-3">
+                  <div>
+                    <h4>Flat $10 Cashbook</h4>
+                    <h2 class="mb-1">min txn: $250</h2>
+                    <h6 class="mb-0">valid once per user</h6>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner section end -->
+
+    <!-- product slider start -->
+    <section class="bag-product ratio_square">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title8 mb-5">
+              <h2 class="text-danger text-center">OUR PRODUCTS</h2>
+              <p class="text-center text-dark">
+                Menu That Always Make You Fall in Love
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="slide-7-demo slick-sm-margin no-arrow">
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product slider end -->
+
+    <!-- banner start -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="./assets/images/hero/banner/2.png"
+              alt=""
+              srcset=""
+              class="img-fluid"
+              width="100%"
+              height="261px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- product slider start -->
+    <section class="bag-product ratio_square">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title8 mb-5">
+              <h2 class="text-danger text-center">OUR PRODUCTS</h2>
+              <p class="text-center text-dark">
+                Menu That Always Make You Fall in Love
+              </p>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="slide-7-demo slick-sm-margin no-arrow">
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href="cart.html"
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- product slider end -->
+
+    <!-- banner start -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="./assets/images/hero/banner/2.png"
+              alt=""
+              srcset=""
+              class="img-fluid"
+              width="100%"
+              height="261px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- gift card section start -->
+    <section class="gift-card-section ratio2_1">
+      <div class="container">
+        <div class="title8 mb-5">
+          <h2 class="text-danger text-center">WHAT WE SERVE</h2>
+          <p class="text-center text-dark">
+            Your Favorite Products Delivery Partner
+          </p>
+        </div>
+        <div class="card-box">
+          <div class="row partition2">
+            <div class="col-md-4">
+              <a href="#">
+                <div class="collection-banner p-right text-center">
+                  <div class="card" style="border: none">
+                    <img
+                      src="./assets/images/hero/banner/s-1.png"
+                      class="card-img-top"
+                      alt="..."
+                      height="250px"
+                    />
+                    <div class="card-body">
+                      <h2 class="card-title" style="font-size: 20px">
+                        Easy to Order
+                      </h2>
+                      <p class="card-text">
+                        You only need a few steps in ordering food.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="collection-banner p-right text-center">
+                  <div class="card" style="border: none">
+                    <img
+                      src="./assets/images/hero/banner/s-2.png"
+                      class="card-img-top"
+                      alt="..."
+                      height="250px"
+                    />
+                    <div class="card-body">
+                      <h2 class="card-title" style="font-size: 20px">
+                        Fastest Delivery
+                      </h2>
+                      <p class="card-text">
+                        Delivery that is always ontime even faster.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-md-4">
+              <a href="#">
+                <div class="collection-banner p-right text-center">
+                  <div class="card" style="border: none">
+                    <img
+                      src="./assets/images/hero/banner/s-3.png"
+                      class="card-img-top"
+                      alt="..."
+                      height="250px"
+                    />
+                    <div class="card-body">
+                      <h2 class="card-title" style="font-size: 20px">
+                        Best Quality
+                      </h2>
+                      <p class="card-text">
+                        Not only fast for us, quality is also number one.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- gift card section end -->
+
+    <!-- deal product start -->
+    <section
+      class="bag-product ratio_square deal-product-space section-b-space"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title8">
+              <h2 class="text-center text-danger">Lowest Price hero</h2>
+              <p class="text-center text-dark">atta, dal, rice and more</p>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="slide-7-demo slick-sm-margin no-arrow">
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/1.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 11 Pro</h6>
+                  </a>
+                  <h5>$721.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/2.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Dell Computer</h6>
+                  </a>
+                  <h5>$60.59</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/3.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>Oandind Watch</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-box product-style-4">
+                <div class="img-wrapper">
+                  <div class="front">
+                    <a href="product-list.html"
+                      ><img
+                        alt=""
+                        src="./assets/images/hero/products/4.png"
+                        class="img-fluid blur-up lazyload bg-img"
+                    /></a>
+                  </div>
+                  <div class="cart-detail">
+                    <a href="javascript:void(0)" title="Add to Wishlist"
+                      ><i class="ti-heart" aria-hidden="true"></i
+                    ></a>
+
+                    <a href="compare.html" title="Compare"
+                      ><i class="ti-reload" aria-hidden="true"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="product-info">
+                  <a href="product-list.html">
+                    <h6>I phone 12</h6>
+                  </a>
+                  <h5>$700.49</h5>
+                  <div>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star text-warning"></i>
+                    <i class="fa fa-star-half-o text-warning"></i>
+                  </div>
+
+                  <div class="addtocart_btn">
+                    <a
+                      href=""
+                      type="button"
+                      class="add-button add_cart"
+                      title="Add to cart"
+                    >
+                      <i class="fa fa-plus"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- deal product end -->
+
+    <!-- service section start -->
+    <section class="service-w-bg banner-padding theme-bg-service">
+      <div class="container">
+        <div class="service p-0">
+          <div class="row margin-default">
+            <div class="col-lg-3 col-sm-6 service-block">
+              <div class="media">
+                <img
+                  src="./assets/images/icon/free-shipping.png"
+                  alt=""
+                  srcset=""
+                  width="50px"
+                />
+                <div class="media-body">
+                  <h4>free shipping</h4>
+                  <p>free shipping world wide</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 service-block">
+              <div class="media">
+                <img
+                  src="./assets/images/icon/24.png"
+                  alt=""
+                  srcset=""
+                  width="50px"
+                />
+                <div class="media-body">
+                  <h4>24 X 7 service</h4>
+                  <p>online service for 24 X 7</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 service-block">
+              <div class="media">
+                <img
+                  src="./assets/images/icon/offer.png"
+                  alt=""
+                  srcset=""
+                  width="30px"
+                />
+                <div class="media-body">
+                  <h4>festival offer</h4>
+                  <p>super sale upto 50% off</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 service-block">
+              <div class="media">
+                <img
+                  src="./assets/images/icon/card.png"
+                  alt=""
+                  srcset=""
+                  width="50px"
+                />
+                <div class="media-body">
+                  <h4>online pay</h4>
+                  <p>online payment avaible</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- service section end -->
+
+    <!-- banner start -->
+    <section class="mb-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <img
+              src="./assets/images/hero/banner/3.png"
+              alt=""
+              srcset=""
+              class="img-fluid"
+              width="100%"
+              height="261px"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- app section start -->
+    <section class="app-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div>
+              <h4>DOWNLOAD APP</h4>
+              <h2>Get Started With Fudo Today!</h2>
+              <p>
+                Discover Products wherever and whenever and get your food
+                delivered quickly.
+              </p>
+              <ul class="store-details">
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./assets/images/store/google.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><img
+                      src="./assets/images/store/app.png"
+                      class="img-fluid"
+                      alt=""
+                  /></a>
+                </li>
+              </ul>
+              <a
+                href="#"
+                class="btn btn-solid animated rounded-3 mt-5"
+                data-animation-in="fadeInUp"
+                data-delay-in="0.5"
+                >Get The App</a
+              >
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="card d-flex justify-content-center align-items-center mb-5 ml-5"
+              style="
+                padding: 2rem;
+                box-shadow: 0px -6px 40px rgba(171, 190, 209, 0.3),
+                  0px 6px 40px rgba(171, 190, 209, 0.3);
+                border-radius: 20px;
+                width: 197px;
+                height: 217px;
+                margin-left: 10rem;
+                background-color: #ff4c3b;
+              "
+            >
+              <div
+                style="
+                  width: 80px;
+                  height: 80px;
+                  background: #fff;
+                  border-radius: 100px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                "
+              >
+                <img
+                  src="./assets/images/icon/Vector.png"
+                  class="card-img-top"
+                  alt="..."
+                  style="width: 40px"
+                />
+              </div>
+
+              <div class="card-body text-center">
+                <h5 class="card-title text-white">Your Food Has Arrived</h5>
+              </div>
+            </div>
+            <div
+              class="card mb-5"
+              style="
+                box-shadow: 0px -6px 40px rgba(171, 190, 209, 0.3),
+                  0px 6px 40px rgba(171, 190, 209, 0.3);
+                border-radius: 20px;
+                height: 70px;
+              "
+            >
+              <div class="card-body">
+                <div class="d-flex">
+                  <img
+                    src="./assets/images/icon/Ellipse 134.png"
+                    alt="user-img"
+                    srcset=""
+                    style="width: 32px; height: 32px"
+                  />
+                  <div class="px-5">
+                    <h4>Richard Watson</h4>
+                    <p>Food Courier</p>
+                  </div>
+                  <img
+                    src="./assets/images/icon/call.png"
+                    alt="call-img"
+                    srcset=""
+                    style="width: 32px; height: 32px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="./assets/images/hero/banner/Rectangle.png"
+              alt="app-img"
+              srcset=""
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- app section end -->
+
+    <!-- footer start -->
+    <footer class="footer-light footer-expand pb-0" style="background: #fffdf4">
+      <div class="section-t-space section-b-space">
+        <div class="container">
+          <div class="row footer-theme partition-f">
+            <div class="col-lg-4 col-md-6">
+              <div class="footer-title footer-mobile-title">
+                <h4>about</h4>
+              </div>
+              <div class="footer-contant">
+                <div class="footer-logo">
+                  <img src="./assets/images/icon/logo/37.png" alt="" />
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam,
+                </p>
+                <ul class="store-details">
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/store/google.png"
+                        class="img-fluid"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/store/app.png"
+                        class="img-fluid"
+                        alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col offset-xxl-1">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>Quick Links</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul>
+                    <li><a href="product-list.html">Products</a></li>
+
+                    <li><a href="wishlist.html">Favorite</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="category.html">Category</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>why we choose</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="return-policy.html">return Policy</a></li>
+                    <li><a href="privacy-policy.html">Privacy & Policy</a></li>
+                    <li>
+                      <a href="terms-conditions.html">Terms & Conditions</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="sub-title">
+                <div class="footer-title">
+                  <h4>store information</h4>
+                </div>
+                <div class="footer-contant">
+                  <ul class="contact-list">
+                    <li><i class="fa fa-map-marker"></i>Pune ,MH| India</li>
+                    <li><i class="fa fa-phone"></i>Call Us: 9876543210</li>
+                    <li>
+                      <i class="fa fa-envelope"></i>Email Us:
+                      <a href="#">demo@demo.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row small-section pb-0 d-md-block d-none">
+            <div class="col-12 popular-search-section">
+              <h4 class="mt-5">About E commerce</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,sed do eiusmod tempor incididunt ut labore
+                et dolore magna aliqua. Ut enim ad minim veniam,
+              </p>
+              <h4 class="mt-5">Payment partners</h4>
+              <div>
+                <img
+                  src="./assets/images/payment-footer.png"
+                  alt=""
+                  class="img-fluid payment-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-md-6 col-sm-12">
+              <div class="footer-end">
+                <p>
+                  <i class="fa fa-copyright" aria-hidden="true"></i> 2023-24 All
+                  right reserved.
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-6 col-sm-12">
+              <div class="payment-card-bottom">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><img src="./assets/images/icon/visa.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./assets/images/icon/mastercard.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./assets/images/icon/paypal.png" alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="./assets/images/icon/american-express.png"
+                        alt=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img src="./assets/images/icon/discover.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- tap to top -->
+    <div class="tap-top">
+      <div>
+        <i class="fa fa-angle-double-up"></i>
+      </div>
+    </div>
+    <!-- tap to top End -->
+
+    <!-- latest jquery-->
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+
+    <!-- portfolio js -->
+    <script src="./assets/js/isotope.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+
+    <!-- menu js-->
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/sticky-menu.js"></script>
+
+    <!-- feather icon js-->
+    <script src="./assets/js/feather.min.js"></script>
+
+    <!-- lazyload js-->
+    <script src="./assets/js/lazysizes.min.js"></script>
+
+    <!-- slick js-->
+    <script src="./assets/js/slick.js"></script>
+    <script src="./assets/js/slick-animation.min.js"></script>
+
+    <!-- Bootstrap js-->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Notification js-->
+    <script src="./assets/js/bootstrap-notify.min.js"></script>
+
+    <!-- Theme js-->
+
+    <script src="./assets/js/color-setting.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/custom-slick-animated.js"></script>
+
+    <script>
+      $(window).on("load", function () {
+        setTimeout(function () {
+          $("#exampleModal").modal("show");
+        }, 2500);
+      });
+
+      function openSearch() {
+        document.getElementById("search-overlay").style.display = "block";
+      }
+
+      function closeSearch() {
+        document.getElementById("search-overlay").style.display = "none";
+      }
+      feather.replace();
+    </script>
+  </body>
+</html>
